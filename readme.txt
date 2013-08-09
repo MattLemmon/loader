@@ -16,17 +16,16 @@ _____________________________________________________________
 
 loader contents:
 
-  root:
     loader.rb     -  main file, requires others, lists classes
     sand_box.yml  -  map used in one of the gamestates
     cptncat.rb    -  CptnRuby skin pack
     readme.txt
     license.txt
 
-  sub-folders:
-    gs        -  contains gamestates and .rb files
-    media     -  contains media
-    ref       -  contains Chingu_Help document
+    sub-folders:
+      gs        -  contains gamestates and .rb files
+      media     -  contains media
+      ref       -  contains Chingu_Help document
 _____________________________________________________________
 
   Long-Term Goals:     Load CptnCat as a gamestate
