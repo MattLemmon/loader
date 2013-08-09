@@ -5,3 +5,17 @@ Most of the images and sounds are from the public domain. But I'm not 100% posit
 
 I'm not sure if the fish is copyrighted. I pulled it from an animated gif.
 
+Gosu and Chingu are subject to the MIT LICENSE, and the 
+GNU LESSER GENERAL PUBLIC LICENCE (Version 2.1), respectively.
+
+CAPTAIN RUBY WITH WALL JUMP
+Thank yous: ---
+  Thanks Maverick for epic Captain Ruby with Wall Jump.
+  Thanks Julian for Gosu. It is awesome.
+
+                 ____                       
+                / __ \                         
+               / /  \ \                        
+               \ \  / /                        
+                \/  \/                         
+              opensource                       
