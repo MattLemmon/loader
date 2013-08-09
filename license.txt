@@ -1,9 +1,7 @@
 
-loader
+loader - chingu example loader
 
 Most of the images and sounds are from the public domain. But I'm not 100% positive about all of them.
 
-It's definitely okay to use any version of the cat
-
-I'm not sure about the fish.
+I'm not sure if the fish is copyrighted. I pulled it from an animated gif.
 

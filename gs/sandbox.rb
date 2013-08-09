@@ -27,7 +27,7 @@ class Sandbox < Chingu::GameState
   def edit
 #    push_game_state(GameStates::Edit.new(:grid => [32,32], :classes => [Droid, Tube, CogWheel, Block, Saw, Battery]))
 
-    state = GameStates::Edit.new(:classes => [Earth, Grey, Droid, Star, Dog, Chicken, Horse, Starship, Circle, Box, Plasma, FireCube, Airplane, Enemy])
+    state = GameStates::Edit.new(:classes => [Earth, Grey, Droid, Star, Dog, Chicken, Horse, Starship, Circle, Box, Plasma, FireCube, Airplane, Enemy, Blank])
     push_game_state(state)
   end
 

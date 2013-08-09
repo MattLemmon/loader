@@ -8,8 +8,8 @@
     :factor_y: 4.714285714285716
     :alpha: 255
 - Dog:
-    :x: 1264.0
-    :y: 96.0
+    :x: 1408.0
+    :y: 304.0
     :angle: 0
     :zorder: 100
     :factor_x: 0.8
@@ -24,15 +24,15 @@
     :factor_y: 4.857142857142859
     :alpha: 255
 - Grey:
-    :x: 1440.0
-    :y: 96.0
+    :x: 1408.0
+    :y: 472.0
     :angle: 0
     :zorder: 100
     :factor_x: 2.309090909090909
     :factor_y: 2.309090909090909
     :alpha: 255
 - Grey:
-    :x: 1080.0
+    :x: 1408.0
     :y: 96.0
     :angle: 0
     :zorder: 100
@@ -48,8 +48,8 @@
     :factor_y: 4.571428571428572
     :alpha: 255
 - Earth:
-    :x: 544.0
-    :y: 72.0
+    :x: 552.0
+    :y: 64.0
     :angle: 0
     :zorder: 100
     :factor_x: 6.527272727272727
@@ -136,16 +136,16 @@
     :factor_y: 3.0
     :alpha: 255
 - Earth:
-    :x: 744.0
-    :y: 264.0
+    :x: 688.0
+    :y: 256.0
     :angle: 0
     :zorder: 100
     :factor_x: 1.8727272727272728
     :factor_y: 1.8571428571428572
     :alpha: 255
 - Earth:
-    :x: 784.0
-    :y: 8.0
+    :x: 704.0
+    :y: 0.0
     :angle: 0
     :zorder: 100
     :factor_x: 3.618181818181818
@@ -168,7 +168,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Earth:
-    :x: 784.0
+    :x: 704.0
     :y: 152.0
     :angle: 0
     :zorder: 100
@@ -176,7 +176,7 @@
     :factor_y: 3.4285714285714284
     :alpha: 255
 - Earth:
-    :x: 808.0
+    :x: 768.0
     :y: 280.0
     :angle: 0
     :zorder: 100
@@ -216,7 +216,7 @@
     :factor_y: 1.5714285714285714
     :alpha: 255
 - Earth:
-    :x: 896.0
+    :x: 864.0
     :y: 288.0
     :angle: 0
     :zorder: 100
@@ -224,7 +224,7 @@
     :factor_y: 1.8571428571428572
     :alpha: 255
 - Earth:
-    :x: 880.0
+    :x: 840.0
     :y: 224.0
     :angle: 0
     :zorder: 100
@@ -232,55 +232,55 @@
     :factor_y: 1.0
     :alpha: 255
 - Earth:
-    :x: 888.0
-    :y: -40.0
+    :x: 808.0
+    :y: -24.0
     :angle: 0
     :zorder: 100
     :factor_x: 2.018181818181818
     :factor_y: 2.0
     :alpha: 255
 - Earth:
-    :x: 896.0
-    :y: 48.0
+    :x: 800.0
+    :y: 64.0
     :angle: 0
     :zorder: 100
     :factor_x: 1.7272727272727273
     :factor_y: 1.7142857142857142
     :alpha: 255
 - Earth:
-    :x: 888.0
-    :y: 112.0
+    :x: 800.0
+    :y: 128.0
     :angle: 0
     :zorder: 100
     :factor_x: 1.0
     :factor_y: 1.0
     :alpha: 255
 - Earth:
-    :x: 880.0
-    :y: 152.0
+    :x: 800.0
+    :y: 168.0
     :angle: 0
     :zorder: 100
     :factor_x: 0.7090909090909091
     :factor_y: 0.7142857142857143
     :alpha: 255
 - Earth:
-    :x: 888.0
-    :y: 184.0
+    :x: 808.0
+    :y: 208.0
     :angle: 0
     :zorder: 100
     :factor_x: 1.0
     :factor_y: 1.0
     :alpha: 255
 - FireCube:
-    :x: 20436.0
-    :y: 19743.0
+    :x: 20620.0
+    :y: 19874.0
     :angle: 0
     :zorder: 200
     :factor_x: 2
     :factor_y: 2
     :alpha: 255
 - Enemy:
-    :x: -4968.0
+    :x: -5198.0
     :y: 256.0
     :angle: 0
     :zorder: 100
@@ -288,31 +288,31 @@
     :factor_y: 1.0
     :alpha: 255
 - Earth:
-    :x: 1520.0
+    :x: 1400.0
+    :y: 680.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1.7272727272727273
+    :factor_y: 1.7142857142857142
+    :alpha: 255
+- Earth:
+    :x: 1200.0
     :y: 640.0
     :angle: 0
     :zorder: 100
-    :factor_x: 3.4727272727272727
-    :factor_y: 3.4285714285714284
+    :factor_x: 2.6
+    :factor_y: 2.5714285714285716
     :alpha: 255
 - Earth:
-    :x: 1216.0
-    :y: 632.0
+    :x: 1312.0
+    :y: 648.0
     :angle: 0
     :zorder: 100
-    :factor_x: 3.1818181818181817
-    :factor_y: 3.142857142857143
-    :alpha: 255
-- Earth:
-    :x: 1368.0
-    :y: 624.0
-    :angle: 0
-    :zorder: 100
-    :factor_x: 3.036363636363636
-    :factor_y: 3.0
+    :factor_x: 2.1636363636363636
+    :factor_y: 2.142857142857143
     :alpha: 255
 - Enemy:
-    :x: 1256.0
+    :x: 1026.0
     :y: 528.0
     :angle: 0
     :zorder: 100
@@ -320,7 +320,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Enemy:
-    :x: 1312.0
+    :x: 1082.0
     :y: 552.0
     :angle: 0
     :zorder: 100
@@ -328,7 +328,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Enemy:
-    :x: 1328.0
+    :x: 1098.0
     :y: 488.0
     :angle: 0
     :zorder: 100
@@ -336,7 +336,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Enemy:
-    :x: 1192.0
+    :x: 962.0
     :y: 464.0
     :angle: 0
     :zorder: 100
@@ -344,7 +344,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Enemy:
-    :x: 1136.0
+    :x: 906.0
     :y: 496.0
     :angle: 0
     :zorder: 100
@@ -352,7 +352,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Enemy:
-    :x: 1184.0
+    :x: 954.0
     :y: 544.0
     :angle: 0
     :zorder: 100
@@ -360,7 +360,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Enemy:
-    :x: 1392.0
+    :x: 1162.0
     :y: 528.0
     :angle: 0
     :zorder: 100
@@ -368,7 +368,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Enemy:
-    :x: 1200.0
+    :x: 970.0
     :y: 504.0
     :angle: 0
     :zorder: 100
@@ -376,7 +376,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Enemy:
-    :x: 1368.0
+    :x: 1138.0
     :y: 472.0
     :angle: 0
     :zorder: 100
@@ -384,7 +384,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Enemy:
-    :x: 1008.0
+    :x: 778.0
     :y: 504.0
     :angle: 0
     :zorder: 100
@@ -392,7 +392,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Enemy:
-    :x: 1328.0
+    :x: 1098.0
     :y: 288.0
     :angle: 0
     :zorder: 100
@@ -400,7 +400,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Enemy:
-    :x: 1280.0
+    :x: 1050.0
     :y: 296.0
     :angle: 0
     :zorder: 100
@@ -408,7 +408,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Enemy:
-    :x: 1312.0
+    :x: 1082.0
     :y: 312.0
     :angle: 0
     :zorder: 100
@@ -416,7 +416,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Enemy:
-    :x: 1368.0
+    :x: 1138.0
     :y: 272.0
     :angle: 0
     :zorder: 100
@@ -424,7 +424,7 @@
     :factor_y: 1.0
     :alpha: 255
 - Enemy:
-    :x: 1352.0
+    :x: 1122.0
     :y: 320.0
     :angle: 0
     :zorder: 100
@@ -432,10 +432,26 @@
     :factor_y: 1.0
     :alpha: 255
 - Plasma:
-    :x: 0.0
-    :y: 200.0
+    :x: 885.2000000000008
+    :y: 1259.2
     :angle: 0
     :zorder: 100
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- Blank:
+    :x: 1096.0
+    :y: 304.0
+    :angle: 0
+    :zorder: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- Grey:
+    :x: 1280.0
+    :y: 96.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 2.4545454545454546
+    :factor_y: 2.4545454545454546
     :alpha: 255

@@ -25,7 +25,7 @@ loader contents:
     sub-folders:
       gs        -  contains gamestates and .rb files
       media     -  contains media
-      ref       -  contains Chingu_Help document
+      ref       -  contains Chingu_Help.txt
 _____________________________________________________________
 
   Long-Term Goals:     Load CptnCat as a gamestate
@@ -44,4 +44,7 @@ _____________________________________________________________
                                             Jon
                                             IgorJorobus
                                             BlueScope
+                                            allcaps
+
+  Special Thanks to ippa and jlnr.
 _____________________________________________________________
