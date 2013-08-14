@@ -96,26 +96,17 @@ class Droid < Chingu::GameObject
     #puts "inside_state: #{$window.game_state_manager.inside_state}"
   end  
 
-
   def update
   #We don't need to call super() in update().
   #By default GameObject#update is empty since it doesn't contain any gamelogic to speak of.
     # Move the animation forward by fetching the next frame and putting it into @image
     @image = @animation[@frame_name].next # @image is drawn by default by GameObject#draw
 
-
-
     if @x == @last_x && @y == @last_y             # droid stands still, use the scanning animation
       @frame_name = :scan
     else
       @direction = [@x - @last_x, @y - @last_y]   # Save the direction to use with bullets when firing
     end
-
-
-    
-#    @frame_name = :scan if @x == @last_x && @y == @last_y    # If droid stands still, use the scanning animation
-
-#    @direction = [@x - @last_x, @y - @last_y]
 
     if @x < -30     # wrap around beyond screen edges
       @x = 930
@@ -133,14 +124,7 @@ class Droid < Chingu::GameObject
 #    @x, @y = @last_x, @last_y if outside_window?  # return to previous coordinates if outside window
     @last_x, @last_y = @x, @y                     # save current coordinates for possible use next time
   end
-
-
-
 end
-
-
-
-
 
 
 #
@@ -161,6 +145,4 @@ class Bullet < Chingu::GameObject
   end
 
 end
-
-
 

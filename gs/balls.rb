@@ -160,7 +160,7 @@ class Splash < Chingu::GameState
       cube1.go_red!
       cube2.go_red!
     end
-    Circle.each_collision(Circle) do |cube1, cube2|
+    Box.each_collision(Box) do |cube1, cube2|
       cube1.go_red!
       cube2.go_red!
     end

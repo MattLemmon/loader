@@ -97,8 +97,9 @@ class Fish < Chingu::GameObject
     self.factor *= 0.95
   end
 
-  def update       # Move the animation forward by fetching the next frame and putting it into @image
-    @image = @animation[@frame_name].next           # @image is drawn by default by GameObject#draw
-  end
+  def update       
+    @x -= 1
+    @image = @animation[@frame_name].next     # Move the animation forward by fetching the next frame and putting it into @image 
+  end                                         # @image is drawn by default by GameObject#draw
 end
 
