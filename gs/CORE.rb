@@ -8,11 +8,12 @@ class Loader < Chingu::Window
     super(900,700)
     @cursor = true # comment out to hide cursor
     self.input = { :esc => :exit,
-                   :enter => :next,
-                   :return => :next,
-                   [:l, :q] => :pop,
+                   [:l, :q, :f7] => :pop,
+                   [:enter, :return, :f8] => :next,
                    :z => :log,
                    :f => :flat,
+                   :f7 => :pop,
+                   :f8 => :next,
                    :r => lambda{current_game_state.setup}
                  }
     @nextgame = [ DroidGame, Bowl, Pond, Plasmoids, Jungle, Splash, Cat, Zoom, CityBattle, Sandbox,
