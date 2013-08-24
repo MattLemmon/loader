@@ -9,9 +9,9 @@ class Cat < Chingu::GameState
     super
     $window.caption = "Additional Controls:   spacebar  A  W  S  D"
     self.input = {:p => Pause, :r => lambda{ current_game_state.setup } }
-    Sound["../media/meow1.wav"]   # cache sounds by accessing once
-    Sound["../media/meow2.wav"]
-    Sound["../media/meow3.wav"]
+    Sound["../media/sounds/meow1.wav"]   # cache sounds by accessing once
+    Sound["../media/sounds/meow2.wav"]
+    Sound["../media/sounds/meow3.wav"]
   end
   def setup
     Gato.destroy_all
@@ -52,12 +52,12 @@ class Gato < Chingu::GameObject
     @cooling_down = true
     after(250) { @cooling_down = false }
     if rand(3) == 1
-      Sound["../media/meow1.wav"].play(0.4)
+      Sound["../media/sounds/meow1.wav"].play(0.4)
     else
       if rand(2) == 1
-        Sound["../media/meow2.wav"].play(0.4)
+        Sound["../media/sounds/meow2.wav"].play(0.4)
       else
-        Sound["../media/meow3.wav"].play(0.3)
+        Sound["../media/sounds/meow3.wav"].play(0.3)
       end
     end
   end

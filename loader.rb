@@ -15,6 +15,7 @@ require 'pond'          #    Pond, Fish
 require 'cat'           #    Cat, Gato, Player2
 require 'zoom'          #    Zoom,  Starship,  Star
 require 'battle'        #    CityBattle, Airplane, Missile, EnemyBullet, Explosion, Shrapnel, Enemy, Gameover, Done
+require 'flat'          #    Flat
 require 'sandbox'       #    SandBox,  Explorer
 require 'ex7'           #    ParticleDisplay, Fill, FillRect, FillGrdnt, FillGrdntMultClrs, FillGrdntRect
 require 'game_of_life'  #    GameOfLife

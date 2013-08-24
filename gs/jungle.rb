@@ -14,18 +14,6 @@ class Scroller < Chingu::GameState
                     :holding_down => :camera_down, :space => :meow, :p => Pause   }   
   end
     
-  def meow
-    if rand(3) == 1
-      Sound["../media/meow1.wav"].play(0.4)
-    else
-      if rand(2) == 1
-        Sound["../media/meow2.wav"].play(0.4)
-      else
-        Sound["../media/meow3.wav"].play(0.3)
-      end
-    end
-  end
-  
   def camera_left
     @parallax.camera_x -= 2     # This is essentially the same as @parallax.x += 2
   end
@@ -37,6 +25,18 @@ class Scroller < Chingu::GameState
   end
   def camera_down
     @parallax.camera_y += 2    # This is essentially the same as @parallax.y -= 2
+  end
+
+  def meow
+    if rand(3) == 1
+      Sound["../media/sounds/meow1.wav"].play(0.4)
+    else
+      if rand(2) == 1
+        Sound["../media/sounds/meow2.wav"].play(0.4)
+      else
+        Sound["../media/sounds/meow3.wav"].play(0.3)
+      end
+    end
   end
 end
 
@@ -65,10 +65,5 @@ class Jungle < Scroller
     @parallax << {:image => "layer-sand.png", :damping => 1}
 
     Chingu::Text.create("Jungle", :x => 0, :y => 0, :size => 30, :color => @text_color)
-
-    Sound["../media/meow1.wav"]  # cache sounds by accessing once
-    Sound["../media/meow2.wav"]
-    Sound["../media/meow3.wav"]
   end
-
 end

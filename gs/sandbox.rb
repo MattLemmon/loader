@@ -21,29 +21,28 @@ class Sandbox < Chingu::GameState
     load_game_objects
   
     # Create our mechanic star-hunter
-    @droid = Explorer.create(:x => 300, :y => 350)    
+    @cat = Explorer.create(:x => 300, :y => 350)    
   end
 
   def edit
-#    push_game_state(GameStates::Edit.new(:grid => [32,32], :classes => [Droid, Tube, CogWheel, Block, Saw, Battery]))
-
     state = GameStates::Edit.new(:classes => [Earth, Grey, Droid, Star, Dog, Chicken, Horse, Starship, Circle, Box, Plasma, FireCube, Airplane, Enemy, Blank])
     push_game_state(state)
   end
 
-
   def update    
     super
 
-    # Droid can pick up starts
-    @droid.each_collision(Star) do |droid, star|
+    # Cat can pick up starts
+    @cat.each_collision(Star) do |cat, star|
       star.destroy
       Sound["../media/meow1.wav"].play(0.5)
     end
-    @droid.each_collision(Dog) do |droid, dog|
-      @droid.bark
+    @cat.each_collision(Dog) do |cat, dog|
+      @cat.bark
     end
-    
+    @cat.each_collision(Horse) do |cat, horse|
+      @cat.horse
+    end
     # Bullets collide with stone_walls
     #Bullet.each_collision(StoneWall) do |bullet, stone_wall|
     #  bullet.die
@@ -51,16 +50,16 @@ class Sandbox < Chingu::GameState
     #end
     
     # Destroy game objects that travels outside the viewport
-    Bullet.destroy_if { |game_object| self.viewport.outside_game_area?(game_object) }
+    # Bullet.destroy_if { |game_object| self.viewport.outside_game_area?(game_object) }
     
     #
-    # Align viewport with the droid in the middle.
-    # This will make droid will be in the center of the screen all the time...
+    # Align viewport with the cat in the middle.
+    # Thus cat will be in the center of the screen all the time...
     # ...except when hitting outer borders and viewport x_min/max & y_min/max kicks in.
     #
-    self.viewport.center_around(@droid)
+    self.viewport.center_around(@cat)
         
-    $window.caption = "BULLETS: #{Bullet.size}x/y: #{@droid.x.to_i}/#{@droid.y.to_i} - viewport x/y: #{self.viewport.x.to_i}/#{self.viewport.y.to_i} - FPS: #{$window.fps}     Press E to edit map."
+    $window.caption = "BULLETS: #{Bullet.size}x/y: #{@cat.x.to_i}/#{@cat.y.to_i} - viewport x/y: #{self.viewport.x.to_i}/#{self.viewport.y.to_i} - FPS: #{$window.fps}     Press E to edit map."
   end
 end
 
@@ -124,27 +123,42 @@ class Explorer < Chingu::GameObject
   def bark
     return if @cooling_down2
     @cooling_down2 = true
-    after(700) { @cooling_down2 = false }
+    after(2000) { @cooling_down2 = false }
     if rand(4) == 1
-      Sound["../media/sounds/bark4.wav"].play(0.9)
+      Sound["../media/sounds/bark4.wav"].play(0.2)
     else
       if rand(3) == 1
-        Sound["../media/sounds/bark2.wav"].play(0.9)
+        Sound["../media/sounds/bark2.wav"].play(0.2)
       else
         if rand(2) == 1
-          Sound["../media/sounds/bark3.wav"].play(0.9)
+          Sound["../media/sounds/bark3.wav"].play(0.2)
         else
           if rand(2) == 1
-            Sound["../media/sounds/bark1.wav"].play(0.9)
+            Sound["../media/sounds/bark1.wav"].play(0.2)
           else
-            Sound["../media/sounds/bark5.wav"].play(0.7)
-            Sound["../media/sounds/bark6.wav"].play(0.6)          
+            Sound["../media/sounds/bark5.wav"].play(0.2)
+            Sound["../media/sounds/bark6.wav"].play(0.2)          
           end
         end
       end
     end
   end
   
+  def horse
+    return if @cooling_down2
+    @cooling_down2 = true
+    after(2000) { @cooling_down2 = false }
+    if rand(3) == 1
+      Sound["../media/sounds/horse1.ogg"].play(1.2)
+    else
+      if rand(2) == 1
+        Sound["../media/sounds/horse2.ogg"].play(0.6)
+      else
+        Sound["../media/sounds/horse3.ogg"].play(1.1)
+      end
+    end
+  end
+
   def move(x,y)
     @x += x         # Revert player to last positions when colliding with at least one Class Grey object
     @x = @last_x  if self.first_collision(Grey)

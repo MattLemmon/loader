@@ -24,13 +24,13 @@ class Pond < Chingu::GameState
 
   def new_fish
     Fish.create(:x => @fish_x, :y => @fish_y)
-    @fish_x += 209
-    if @fish_x >= 900
+    @fish_x += rand(310) + 90
+    if @fish_x >= 930
       @fish_x -= 890
-      @fish_y += 121
     end
-    if @fish_y >= 700
-      @fish_y -= 680
+    @fish_y += rand(210) + 90
+    if @fish_y >= 730
+      @fish_y -= 765
     end
   end
 
@@ -59,7 +59,7 @@ class Pond < Chingu::GameState
       @count_b += @count
     end
     Particle.each { |particle| particle.y -= 1; particle.x += 2.5 - rand(4) }
-    game_objects.destroy_if { |object| object.outside_window? || object.color.alpha == 0 }
+    Particle.destroy_if { |object| object.outside_window? || object.color.alpha == 0 }
     super
   end
 
@@ -97,8 +97,11 @@ class Fish < Chingu::GameObject
     self.factor *= 0.95
   end
 
-  def update       
+  def update
     @x -= 1
+    if @x < -50     # wrap around beyond screen edges
+      @x = 950
+    end
     @image = @animation[@frame_name].next     # Move the animation forward by fetching the next frame and putting it into @image 
   end                                         # @image is drawn by default by GameObject#draw
 end

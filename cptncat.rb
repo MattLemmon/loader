@@ -19,7 +19,7 @@ end
 #                                                 WINDOW CLASS
 #   Window Class
 #
-class Window < Chingu::Window
+class CptnCat < Chingu::Window
   attr_reader :map
 
   def initialize
@@ -411,4 +411,4 @@ class DustParticle < Chingu::GameObject
 end
 
 
-Window.new.show
+CptnCat.new.show

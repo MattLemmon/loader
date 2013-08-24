@@ -10,12 +10,13 @@ class Loader < Chingu::Window
     self.input = { :esc => :exit,
                    :enter => :next,
                    :return => :next,
-                   :q => :pop,
+                   [:l, :q] => :pop,
                    :z => :log,
+                   :f => :flat,
                    :r => lambda{current_game_state.setup}
                  }
-    @nextgame = [ DroidGame, Bowl, Pond, Plasmoids, Cat, Splash, Jungle, Zoom, CityBattle, ParticleDisplay, Sandbox,
-                  GameOfLife, FillGrdnt, FillGrdntMultClrs, Fill ]
+    @nextgame = [ DroidGame, Bowl, Pond, Plasmoids, Jungle, Splash, Cat, Zoom, CityBattle, Sandbox,
+                  GameOfLife, ParticleDisplay, FillGrdnt, FillGrdntMultClrs, Fill ]
     @w = true
     @ng = -1
   end
@@ -52,6 +53,10 @@ class Loader < Chingu::Window
     if $window.current_game_state.to_s == "Welcome" then
       @ng = -1
     end
+  end
+
+  def flat
+    Flat.create
   end
 end
 
@@ -97,7 +102,7 @@ class Welcome < Chingu::GameState
     @t05 = Chingu::Text.create(:text=>"P           -         pause  " ,              :x=>324, :y=>300, :size=>28) 
     @t06 = Chingu::Text.create(:text=>"R           -         reset  " ,              :x=>323, :y=>340, :size=>28)
     @t07 = Chingu::Text.create(:text=>"Z           -         status log" ,           :x=>324, :y=>380, :size=>28)
-    @t08 = Chingu::Text.create(:text=>"Q           -         previous gamestate" ,   :x=>322, :y=>420, :size=>28)
+    @t08 = Chingu::Text.create(:text=>"Q  or  L      -         last gamestate" ,   :x=>295, :y=>420, :size=>28)
     @t09 = Chingu::Text.create(:text=>"esc         -         exit" ,                 :x=>314, :y=>460, :size=>28)
 #    @t10 = Chingu::Text.create(:text=>"global controls" ,    :x=>100, :y=>390, :size=>28)
   end
