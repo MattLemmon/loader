@@ -12,18 +12,15 @@ class DroidGame < Chingu::GameState
   end
 
   def setup
-#    self.game_objects.destroy_all
-    Droid.destroy_all
+    if @droid != nil; @droid.destroy; end
     Bullet.destroy_all
-    Droid.create(:x => $window.width/2, :y => $window.height/2)
-#    @droid = Droid.new(:x => $window.width/2, :y => $window.height/2)
+    @droid = Droid.create(:x => $window.width/2, :y => $window.height/2)
     self.input = {:p => Pause}
     $window.caption = "Droid Game"
   end
 
   def draw
     Image["../media/plax3.png"].draw(0, 0, 0) # Background Image
-
     super
   end
 end
